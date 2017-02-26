@@ -11,12 +11,20 @@ public class MainLaunchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_launch);
+        getSupportActionBar().setTitle("AllDemo");
     }
 
-    /** Called when the user touches the button */
+    /**
+     * Called when the user touches the button
+     */
     public void fragmentDemo(View view) {
         // Provide context if MyActivity is an internal activity.
         Intent intent = new Intent(this, com.sg.alldemo.fragments.LaunchActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickLayoutDemo(View view) {
+        Intent intent = new Intent(this, com.sg.alldemo.layouts.LaunchActivity.class);
         startActivity(intent);
     }
 

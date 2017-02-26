@@ -23,6 +23,7 @@ public class LaunchActivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragments_layout_main);
+        getSupportActionBar().setTitle("Fragments");
     }
 
 

@@ -15,8 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".fragments.LaunchActivity"></activity>
-        <activity android:name=".fragments.MyListActivity"></activity>
+        <activity android:name=".fragments.LaunchActivity" />
+        <activity android:name=".fragments.MyListActivity" />
+        <activity android:name=".layouts.LaunchActivity" />
+        <activity android:name=".layouts.basic_examples.LinearLayoutHelloWorld"></activity>
     </application>
 
 </manifest>

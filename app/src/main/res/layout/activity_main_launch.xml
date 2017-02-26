@@ -12,6 +12,13 @@
 
 
     <Button
+        android:text="Layouts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickLayoutDemo"
+        android:id="@+id/btnLayoutDemo" />
+
+    <Button
         android:text="Fragment Demo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,4 +30,6 @@
         android:layout_marginTop="72dp"
         android:onClick="fragmentDemo"
         android:id="@+id/btnFragments" />
+
+
 </RelativeLayout>
