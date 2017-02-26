@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.sg.alldemo.R;
 
@@ -23,6 +24,8 @@ public class LaunchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragments_layout_main);
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -73,6 +76,11 @@ public class LaunchActivity extends AppCompatActivity {
 
     public void onMenuQuit(MenuItem item)
     {
+        finish();
+    }
+
+    public void done(View view) {
+        // Provide context if MyActivity is an internal activity.
         finish();
     }
 }
