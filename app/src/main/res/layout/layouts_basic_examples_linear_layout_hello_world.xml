@@ -6,16 +6,97 @@
     android:layout_height="match_parent"
 
     android:orientation="vertical"
-
     tools:context="com.sg.alldemo.layouts.basic_examples.LinearLayoutHelloWorld">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
 
-    <TextView
-        android:text="Hello World"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:gravity="center_horizontal|bottom"
-        android:layout_gravity="right"
-        android:background="#9cf"
-        android:id="@+id/textView" />
+        <TextView
+            android:text="Linear Layout, demo of gravity -- affects content only"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal|bottom"
+            android:background="#9cf"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:text="next item - note layout gravity does not affect in direction of
+            linear layout orientation"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="bottom"
+            android:background="#8de"
+            android:id="@+id/textView1" />
+
+        <TextView
+            android:text="next item - note layout gravity does work on the other axes"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="right"
+            android:background="#8de"
+            android:id="@+id/textView2" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:text="item 1"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5" />
+
+        <TextView
+            android:text="item 2"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:text="item 3"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:text="using weight left"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="#8de"
+            android:id="@+id/textView7" />
+
+        <TextView
+            android:text="using weight right"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="40dp"
+            android:background="#8ff"
+            android:id="@+id/textView6" />
+    </LinearLayout>
+
+
 </LinearLayout>
